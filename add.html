@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<script language="JavaScript" >
+
+function getSubmit(){
+var xmlhttp;
+xmlhttp = new XMLHttpRequest();
+xmlhttp.open("GET","insert1.php?name="+document.getElementById("name").value+"&age="+document.getElementById("age").value+"&address="+document.getElementById("address").value+"&room="+document.getElementById("room").value+"&pid="+document.getElementById("pid").value,false);
+xmlhttp.send(null);
+}
+</script>
+ 
+<style>
+body {
+    background-image: url("7.png");
+    background-position: center top;
+    background-size: 100% auto;
+}
+</style>
+<body>
+
+<a href="home.html">
+  <img src="logout.jpg" alt="HMS" style="width:80px;height:80px;border:0" align ="right">
+</a>
+
+<pre>
+
+
+
+			
+			<font size=4>	MEMBERSHIP REGISTRATION 
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NAME :  <input type="text" name="name1" id="name"/>
+				  
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AGE  :  <input type="text" name="age1" id="age"/>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEX  : <input type ="radio" value ="m">male   <input type ="radio" value ="m">female
+
+			     		
+			    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ADDRESS : <input type="text" name="address1" id="address"/> 
+
+			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   PAN NO : <input type="text" name="room1" id="room"/>
+		
+	
+
+				       	
+			 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MEMBER ID : <input type="text" name="pid1" id="pid"/>
+
+		     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ADMISSION DATE : <input type="date" name="date" min="2015-10-12"><br><br>
+
+			
+
+
+					
+			<a href="done.html">	<input type="submit" value="SAVE" onclick="getSubmit();" /> </a>          <input type ="reset" value="CANCEL" onclick="window.location.href='patient.html'">
+
+
+
+			
+</font>
+</pre>
+<a href="patient.html">
+  <img src="back.png" alt="HMS1" style="width:80px;height:80px;border:0" align ="centre">
+</a>
+</body>
+</html>
